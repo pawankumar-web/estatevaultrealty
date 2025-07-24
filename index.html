@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>EstateVault Realty | Your Trusted Real Estate Partner for Premium Properties</title>
+    <title>EstateVault Realty | Your Trusted Real Estate Partner for Premium Properties</title>
     <meta name="author" content="Piller">
-<meta name="description" content="Explore premium residential and commercial properties with EstateVault Realty. Trusted real estate solutions across India, GCC, and Europe.">
+    <meta name="description"
+        content="Explore premium residential and commercial properties with EstateVault Realty. Trusted real estate solutions across India, GCC, and Europe.">
     <meta name="keywords" content="Piller-html - Real Estate Home HTML Template">
     <meta name="robots" content="INDEX,FOLLOW">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -40,30 +41,31 @@
 </head>
 
 <body class="">
- <div class="preloader">
-    <button class="th-btn preloaderCls">Cancel Preloader</button>
-    <div id="preloader" class="preloader-inner">
-        <div class="txt-loading">
-            <span data-text-preloader="E" class="letters-loading">E</span>
-            <span data-text-preloader="S" class="letters-loading">S</span>
-            <span data-text-preloader="T" class="letters-loading">T</span>
-            <span data-text-preloader="A" class="letters-loading">A</span>
-            <span data-text-preloader="T" class="letters-loading">T</span>
-            <span data-text-preloader="E" class="letters-loading">E</span>
-            <span data-text-preloader="V" class="letters-loading">V</span>
-            <span data-text-preloader="A" class="letters-loading">A</span>
-            <span data-text-preloader="U" class="letters-loading">U</span>
-            <span data-text-preloader="L" class="letters-loading">L</span>
-            <span data-text-preloader="T" class="letters-loading">T</span>
-            <span data-text-preloader="R" class="letters-loading">R</span>
-            <span data-text-preloader="E" class="letters-loading">E</span>
-            <span data-text-preloader="A" class="letters-loading">A</span>
-            <span data-text-preloader="L" class="letters-loading">L</span>
-            <span data-text-preloader="T" class="letters-loading">T</span>
-            <span data-text-preloader="Y" class="letters-loading">Y</span>
+
+    <div class="preloader">
+        <button class="th-btn preloaderCls">Cancel Preloader</button>
+        <div id="preloader" class="preloader-inner">
+            <div class="txt-loading">
+                <span data-text-preloader="E" class="letters-loading">E</span>
+                <span data-text-preloader="S" class="letters-loading">S</span>
+                <span data-text-preloader="T" class="letters-loading">T</span>
+                <span data-text-preloader="A" class="letters-loading">A</span>
+                <span data-text-preloader="T" class="letters-loading">T</span>
+                <span data-text-preloader="E" class="letters-loading">E</span>
+                <span data-text-preloader="V" class="letters-loading">V</span>
+                <span data-text-preloader="A" class="letters-loading">A</span>
+                <span data-text-preloader="U" class="letters-loading">U</span>
+                <span data-text-preloader="L" class="letters-loading">L</span>
+                <span data-text-preloader="T" class="letters-loading">T</span>
+                <span data-text-preloader="R" class="letters-loading">R</span>
+                <span data-text-preloader="E" class="letters-loading">E</span>
+                <span data-text-preloader="A" class="letters-loading">A</span>
+                <span data-text-preloader="L" class="letters-loading">L</span>
+                <span data-text-preloader="T" class="letters-loading">T</span>
+                <span data-text-preloader="Y" class="letters-loading">Y</span>
+            </div>
         </div>
     </div>
-</div>
 
     <div class="sidemenu-wrapper sidemenu-cart d-none d-lg-block">
         <div class="sidemenu-content"><button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
@@ -253,6 +255,9 @@
 
 
 
+
+
+
     </div>
     <div class="th-menu-wrapper">
         <div class="th-menu-area text-center"><button class="th-menu-toggle"><i class="fal fa-times"></i></button>
@@ -428,10 +433,66 @@
                                     class="far fa-bars"></i></button>
                         </div>
                         <div class="col-auto d-none d-xl-block">
-                            <div class="header-button"><a href="contact.html" class="th-btn outline pill text-white"><i
-                                        class="fa-regular fa-house-chimney me-2"></i> Add Listing </a><button
-                                    type="button" class="icon-btn searchBoxToggler text-white"><i
-                                        class="far fa-bars"></i></button></div>
+                          <style>
+  .menu-btn {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    padding: 10px 18px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .menu-btn i {
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+  }
+
+  .menu-btn span {
+    font-size: 1.15rem;
+  }
+
+  .menu-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: all 0.6s ease;
+    pointer-events: none;
+  }
+
+  .menu-btn:hover::before {
+    left: 100%;
+  }
+
+  .menu-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.3);
+  }
+
+  .menu-btn:active i {
+    transform: scale(1.2) rotate(15deg);
+  }
+</style>
+
+<div class="header-button d-flex align-items-center gap-3">
+  <a href="contact.html" class="th-btn outline pill text-white">
+    <i class="fa-regular fa-house-chimney me-2"></i> Add Listing
+  </a>
+
+  <button type="button" class="menu-btn searchBoxToggler d-flex align-items-center gap-2">
+    <i class="far fa-bars"></i>
+    <span>Menu</span>
+  </button>
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -451,8 +512,8 @@
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: 0.3;"></div>
 
         <!-- 📄 Content -->
-        <div
-            class="position-relative z-1 d-flex flex-column justify-content-center align-items-center h-100 px-3 text-center">
+        <div class="position-relative z-1 d-flex flex-column justify-content-center align-items-center h-100 px-3 text-center"
+            style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.9s; animation-name: fadeinup;">
             <!-- 🔷 Optional Logo/Icon -->
             <img src="https://estatevaultrealty.com/wp-content/uploads/2025/07/Estate-Vault-Realty_Logo.svg" alt="Logo"
                 class="mb-4" style="max-width: 100px;">
@@ -532,10 +593,8 @@
             </div>
         </form>
     </div>
-    <div class="about-1-wrapper space overflow-hidden pt-5 mt-4 " id="about-sec">
-        <div class="shape-mockup" data-bottom="0" data-left="0"><img src="assets/img/icon/about-2-shape.png" alt="img">
-        </div>
-        
+    <div class="pt-5 pb-5 " id="about-sec">
+
         <div class="container">
             <div class="row gy-40 gx-70 justify-content-center">
                 <div class="col-xl-7">
@@ -543,7 +602,8 @@
                         <div class="about-logo-wrap-2">
                             <div class="logo-icon-wrap">
                                 <div class="logo-icon"><img src="assets/img/icon/logo-circle-icon.png" alt="img"></div>
-                                <div class="logo-icon-wrap__text"><span class="logo-animation">Trusted Real Estate Experts  </span></div>
+                                <div class="logo-icon-wrap__text"><span class="logo-animation">Trusted Real Estate
+                                        Experts </span></div>
                             </div>
                         </div>
                         <div class="about-left">
@@ -592,289 +652,351 @@
             </div>
         </div>
     </div>
-
-     <div class="why-sec-1 space" id="why-sec" data-bg-src="assets/img/why/why-choose-1-bg.jpg">
+    <!-- OUR PRESENCE SECTION -->
+    <section class="presence-section py-5 bg-greenc text-white ">
         <div class="container">
-            <div class="row justify-content-xl-between justify-content-center align-items-start">
-                <div class="col-xl-6">
-                    <div class="title-area text-center text-xl-start text-left white mb-4">
-                        
-                        <h2 class="sec-title text-white mb-0 fadeinup wow" data-wow-duration="1.5s"
-                            data-wow-delay="0.3s">Trusted by 100+ Million Buyers</h2>
+            <div class="row">
+                <!-- Left Content -->
+                <div class="col-md-5 mb-4">
+                    <div class="presence-info">
+                        <h2 class="sec-title fadeinup wow text-white" data-wow-duration="1.5s" data-wow-delay="0.3s"
+                            style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: fadeinup;">
+                            OUR PRESENCE
+                        </h2>
+                        <h2 class="presence-count display-5 fw-bold text-white">07</h2>
+                        <p class="presence-text mb-3 text-white">OFFICES ACROSS INDIA</p>
+                        <div class="presence-legend d-flex align-items-center mb-3">
+                            <span class="presence-dot me-2"> 🟨</span>
+                            <span class="presence-legend-text text-white"> CURRENT OFFICES</span>
+                        </div>
+                        <p class="presence-note text-white">
+                            Upcoming with 12 more offices in<br> Q4 2024 & Q1 2025
+                        </p>
                     </div>
                 </div>
-                <div class="col-xl-auto">
-                    <div class="why-right-review-wrap sec-btn fadeinup wow" data-wow-duration="1.5s"
-                        data-wow-delay="0.3s">
-                        <div class="trust-content">
-                            <div class="icon"><img src="assets/img/icon/star-icon.svg" alt="img"></div>
-                            <h4 class="box-title">Trustipilot</h4>
-                        </div>
-                        <div class="client">
-                            <div class="avatar"><img src="assets/img/hero/heror-1-avator-group.png" alt="img"></div>
-                            <div class="content">
-                                <div class="th-social"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                        class="fa-solid fa-star"></i>
-                                </div>
-                                <h4 class="review-title"><span class="number"><span
-                                            class="counter-number">19</span>k+</span> clients</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row gy-30 align-items-center justify-content-center">
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="why-card-1">
-                        <div class="hover-icon"><img src="assets/img/icon/why-hover-icon-1.png" alt="img"></div>
-                        <div class="why-card-1__icon"><img src="assets/img/icon/why-icon-1-1.svg" alt="image"></div>
-                        <div class="why-card-1__content">
-                            <h3 class="box-title">Find your home</h3>
-                            <p class="box-text">Altus cedo tantillus video patrocinor valeo carus subseco vestrum credo
-                                virtus.</p>
-                        </div>
-                        <div class="why-card-1__bottom"><a class="th-btn style3 pill bg-white"
-                                href="property-details.html">Find a Home</a></div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="why-card-1">
-                        <div class="hover-icon"><img src="assets/img/icon/why-hover-icon-1.png" alt="img"></div>
-                        <div class="why-card-1__icon"><img src="assets/img/icon/why-icon-1-2.svg" alt="image"></div>
-                        <div class="why-card-1__content">
-                            <h3 class="box-title">Sell a Property</h3>
-                            <p class="box-text">Tantillus certe patrocinor video adipisci valeo carus. Subseco vestrum
-                                taedium.</p>
-                        </div>
-                        <div class="why-card-1__bottom"><a class="th-btn style3 pill bg-white"
-                                href="property-details.html">Sell a Home</a></div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="why-card-1">
-                        <div class="hover-icon"><img src="assets/img/icon/why-hover-icon-1.png" alt="img"></div>
-                        <div class="why-card-1__icon"><img src="assets/img/icon/why-icon-1-3.svg" alt="image"></div>
-                        <div class="why-card-1__content">
-                            <h3 class="box-title">Rent a Home</h3>
-                            <p class="box-text">Velox surgo clarus tantillus confido carus video lumen cedo virtus spes
-                                decerno.</p>
-                        </div>
-                        <div class="why-card-1__bottom"><a class="th-btn style3 pill bg-white"
-                                href="property-details.html">Rent a Home</a></div>
+
+                <!-- Right Map -->
+                <div class="col-md-7 text-center">
+                    <div class="position-relative presence-map-wrapper">
+                        <img src="https://static.wixstatic.com/media/3241d3_d73b39666b2e46ab98f5d2cc8aba7956~mv2.png/v1/fill/w_587,h_640,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Oakmount_Map.png"
+                            alt="India Map" class="img-fluid presence-map-img">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <section class="popular-sec-1 space">
+
+        <!-- Counter Cards -->
+        <div class="container mt-5">
+            <h3 class="box-title text-white" style="padding-left: 59px; padding-bottom: 50px;">
+                Estatevaultrealty In Numbers
+            </h3>
+
+            <!-- First Row of Counters -->
+            <div class="counter-card-wrap d-flex flex-wrap justify-content-between">
+                <div class="counter-card fadeinup wow mb-4">
+                    <div class="box-icon mb-2">
+                        <img src="assets/img/icon/counter_1_1.svg" alt="Icon">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="box-number"><span class="counter-number">25</span><span class="plus-simple">+</span>
+                        </h4>
+                        <p class="box-text">Years of Collective Experience</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+                <div class="counter-card fadeinup wow mb-4">
+                    <div class="box-icon mb-2">
+                        <img src="assets/img/icon/counter_1_1.svg" alt="Icon">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="box-number"><span class="counter-number">5000</span><span
+                                class="plus-simple">+</span></h4>
+                        <p class="box-text">Crores of Transactions</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+                <div class="counter-card fadeinup wow mb-4">
+                    <div class="box-icon mb-2">
+                        <img src="assets/img/icon/counter_1_1.svg" alt="Icon">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="box-number"><span class="counter-number">450</span><span class="plus-simple">+</span>
+                        </h4>
+                        <p class="box-text">Real Estate Projects</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+                <div class="counter-card fadeinup wow mb-4">
+                    <div class="box-icon mb-2">
+                        <img src="assets/img/icon/counter_1_1.svg" alt="Icon">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="box-number"><span class="counter-number">4</span><span class="plus-simple">+</span>
+                        </h4>
+                        <p class="box-text">Million Sq.Ft. Sold</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row of Counters -->
+            <div class="counter-card-wrap d-flex flex-wrap justify-content-center pt-3 mt-3 px-5">
+
+                <div class="counter-card fadeinup wow p-3">
+                    <div class="box-icon mb-2">
+                        <img src="assets/img/icon/counter_1_1.svg" alt="Icon">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="box-number"><span class="counter-number">100</span><span class="plus-simple">+</span>
+                        </h4>
+                        <p class="box-text">Grade A Developers</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+                <div class="counter-card fadeinup wow p-3">
+                    <div class="box-icon mb-2">
+                        <img src="assets/img/icon/counter_1_1.svg" alt="Icon">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="box-number"><span class="counter-number">50</span><span class="plus-simple">+</span>
+                        </h4>
+                        <p class="box-text">Corporate Companies</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+                <div class="counter-card fadeinup wow p-3">
+                    <div class="box-icon mb-2">
+                        <img src="assets/img/icon/counter_1_1.svg" alt="Icon">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="box-number"><span class="counter-number">9000</span><span
+                                class="plus-simple">+</span></h4>
+                        <p class="box-text">Associates & Partners</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <style>
+        .estatevault-section {
+            min-height: 70vh;
+        }
+
+        .estatevault-border-box {
+            border-left: 4px solid #000;
+            position: relative;
+        }
+
+        .estatevault-border-box::after {
+            content: "";
+            position: absolute;
+            left: -4px;
+            top: 50%;
+            height: 50%;
+            width: 4px;
+            background-color: #ccc;
+        }
+
+        .estatevault-subtitle {
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .estatevault-heading {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 1.8;
+            color: #111;
+        }
+
+        .estatevault-button-group {
+            display: inline-flex;
+            border: 1px solid #000;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .estatevault-btn-text {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #fff;
+            color: #000;
+            border: none;
+        }
+
+        .estatevault-btn-icon {
+            padding: 10px 16px;
+            background-color: #fff;
+            font-size: 1.2rem;
+            color: #000;
+            border-left: 1px solid #000;
+        }
+
+        .estatevault-btn-text:hover,
+        .estatevault-btn-icon:hover {
+            background-color: #133328;
+            color: #fff;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+    </style>
+
+
+    <section class="estatevault-section py-5 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="d-flex estatevault-border-box">
+                <div class="estatevault-content ps-4">
+                    <div class="estatevault-subtitle mb-3">ESTATEVAULTREALTY
+                        SERVICES</div>
+                    <h2 class="estatevault-heading mb-4">
+                        We Deliver Exceptional <br />
+                        Products and Services <br />
+                        In Real Estate
+                    </h2>
+                    <div class="estatevault-button-group">
+                        <button class="estatevault-btn-text">Our Services</button>
+                        <button class="estatevault-btn-icon">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Real Estate Quote Section -->
+    <!-- Real Estate Quote Section -->
+    <section class="estatevault-quote-section">
+        <div class="parallax-bg"></div>
+
+        <div class="container position-relative z-2 h-100 d-flex align-items-center justify-content-center">
+            <div class="row w-100 justify-content-end">
+                <div class="col-md-10 col-lg-6 d-none d-md-block">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <div class="quote-box glass-effect text-white p-4 p-md-5 rounded-4 shadow">
+                            <small class="text-uppercase text-white">QUOTE</small>
+                            <h4 class="mt-3 fw-light text-white">"Don’t wait to buy real estate. Buy real estate and
+                                wait."</h4>
+                            <p class="mt-3 mb-0 text-end text-white">– Will Rogers –</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        /* Glass Black Overlay Effect */
+        .glass-effect {
+            background: rgba(0, 0, 0, 0.5);
+            /* black overlay */
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            /* fallback text color */
+        }
+
+        .estatevault-quote-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parallax-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('assets/img/bg/download-bg-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: 0;
+            will-change: background-position;
+            transition: background-position 0.1s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            .parallax-bg {
+                background-position: center top;
+                background-size: cover;
+            }
+        }
+    </style>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const section = document.querySelector('.estatevault-quote-section');
+            const bg = document.querySelector('.parallax-bg');
+            const rect = section.getBoundingClientRect();
+
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                const scrollPercent = rect.top / window.innerHeight;
+                const shiftX = scrollPercent * 30; // Adjust this for how much it should move
+                bg.style.backgroundPosition = `${50 + shiftX}% center`;
+            }
+        });
+    </script>
+
+
+    <section class="testi-card-area-2 overflow-hidden " style="padding-top: 80px; padding-bottom: 80px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-7">
-                    <div class="title-area text-center mb-2">
-                        <p class="sub-title fadeinup wow" data-wow-duration="1.2s" data-wow-delay="0.1s">
-                            <span class="double-line"></span> Popular Properties
-                        </p>
-                        <h2 class="sec-title mb-4 fadeinup wow" data-wow-duration="1.3s" data-wow-delay="0.3s">
-                            Best Properties Sale
-                        </h2>
-                        <div class="filter-menu indicator-active filter-menu-active mt-2 justify-content-center fadeinup wow"
-                            data-wow-duration="1.5s" data-wow-delay="0.5s">
-                            <button data-filter="*" class="th-btn tab-btn active" type="button">View All</button>
-                            <button data-filter=".cat1" class="th-btn tab-btn" type="button">Apartment</button>
-                            <button data-filter=".cat2" class="th-btn tab-btn" type="button">Commercial</button>
-                            <button data-filter=".cat3" class="th-btn tab-btn" type="button">Land or Plot</button>
-                            <button data-filter=".cat4" class="th-btn tab-btn" type="button">Farm</button>
-                        </div>
+                    <div class=" mb-0 text-center">
+
+                        <h2 class="sec-title fadeinup wow" data-wow-duration="1.5s" data-wow-delay="0.3s">What Clients
+                            Say About Us</h2>
                     </div>
                 </div>
             </div>
-            <div class="row gy-30 justify-content-center filter-active">
-                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 filter-item cat3 cat1">
-                    <div class="popular-list-1">
-                        <div class="thumb-wrapper">
-                            <div class="th-slider"
-                                data-slider-options='{"loop":false, "autoplay": false,"autoHeight": true, "effect":"fade"}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-1.jpg"><img
-                                                src="assets/img/popular/popular-1-1.jpg" alt="Image"></a></div>
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-2.jpg"><img
-                                                src="assets/img/popular/popular-1-2.jpg" alt="Image"></a></div>
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-1.jpg"><img
-                                                src="assets/img/popular/popular-1-1.jpg" alt="Image"></a></div>
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-2.jpg"><img
-                                                src="assets/img/popular/popular-1-2.jpg" alt="Image"></a></div>
-                                </div>
-                                <div class="icon-wrap"><button class="slider-arrow slider-prev"><i
-                                            class="far fa-arrow-left"></i></button> <button
-                                        class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
-                                </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="testi-bottom-review-wrap mt-0">
+                        <div class="testi-bottom-item">
+                            <div class="trust-content">
+                                <div class="icon"><img src="assets/img/icon/star-icon.svg" alt="img"></div>
+                                <h4 class="box-title">Trustipilot</h4>
                             </div>
-                            <div class="actions"><a href="wishlist.html" class="icon-btn"><i
-                                        class="fas fa-heart"></i></a></div>
-                            <div class="actions-style-2-wrapper">
-                                <div class="actions style-2"><a href="#" class="icon-btn"><span class="action-text">Add
-                                            To Favorite</span> <i class="fa-solid fa-bookmark"></i> </a><a
-                                        href="assets/img/popular/popular-1-1.jpg"
-                                        class="icon-btn popular-popup-image"><span class="action-text">View all
-                                            img</span> <i class="fa-solid fa-camera"></i></a></div>
-                            </div>
-                            <div class="popular-badge"><img src="assets/img/icon/sell_rent_icon.svg" alt="icon">
-                                <p>For Sale</p>
+                            <div class="bottom">
+                                <div class="avatar"><img src="assets/img/hero/heror-1-avator-group.png" alt="img"></div>
+                                <div class="content">
+                                    <div class="th-social"><i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+                                    <h4 class="review-title"><span class="number"><span
+                                                class="counter-number">19</span>k+</span> clients</h4>
+                                </div>
                             </div>
                         </div>
-                        <div class="property-content">
-                            <div class="media-body">
-                                <h3 class="box-title"><a href="property-details.html">Charming Beach House</a></h3>
-                                <div class="box-text">
-                                    <div class="icon"><img src="assets/img/icon/popular-location.svg" alt="icon"></div>
-                                    39581 Rohan Estates, New York
+                        <div class="divider"></div>
+                        <div class="testi-bottom-item">
+                            <div class="trust-content">
+                                <div class="icon"><img src="assets/img/icon/google-icon.svg" alt="img"></div>
+                                <h4 class="box-title">Google</h4>
+                            </div>
+                            <div class="bottom">
+                                <div class="avatar"><img src="assets/img/hero/heror-1-avator-group-2.png" alt="img">
                                 </div>
-                            </div>
-                            <ul class="property-featured">
-                                <li>
-                                    <div class="icon"><img src="assets/img/icon/bed.svg" alt="icon"></div>Bed 4
-                                </li>
-                                <li>
-                                    <div class="icon"><img src="assets/img/icon/bath.svg" alt="icon"></div>Bath 2
-                                </li>
-                                <li>
-                                    <div class="icon"><img src="assets/img/icon/sqft.svg" alt="icon"></div>1500 sqft
-                                </li>
-                            </ul>
-                            <div class="property-bottom">
-                                <h6 class="box-title">Rs179,800.00</h6><a class="th-btn sm style3 pill"
-                                    href="property-details.html">Enquiry Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 filter-item cat3 cat2 cat1">
-                    <div class="popular-list-1">
-                        <div class="thumb-wrapper">
-                            <div class="th-slider"
-                                data-slider-options='{"loop":false, "autoplay": false,"autoHeight": true, "effect":"fade"}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-2.jpg"><img
-                                                src="assets/img/popular/popular-1-2.jpg" alt="Image"></a></div>
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-3.jpg"><img
-                                                src="assets/img/popular/popular-1-3.jpg" alt="Image"></a></div>
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-2.jpg"><img
-                                                src="assets/img/popular/popular-1-2.jpg" alt="Image"></a></div>
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-3.jpg"><img
-                                                src="assets/img/popular/popular-1-3.jpg" alt="Image"></a></div>
+                                <div class="content">
+                                    <div class="th-social"><i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+                                    <h4 class="review-title"><span class="number"><span
+                                                class="counter-number">25</span>k+</span> clients</h4>
                                 </div>
-                                <div class="icon-wrap"><button class="slider-arrow slider-prev"><i
-                                            class="far fa-arrow-left"></i></button> <button
-                                        class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="actions"><a href="wishlist.html" class="icon-btn"><i
-                                        class="fas fa-heart"></i></a></div>
-                            <div class="actions-style-2-wrapper">
-                                <div class="actions style-2"><a href="#" class="icon-btn"><span class="action-text">Add
-                                            To Favorite</span> <i class="fa-solid fa-bookmark"></i> </a><a
-                                        href="assets/img/popular/popular-1-1.jpg"
-                                        class="icon-btn popular-popup-image"><span class="action-text">View all
-                                            img</span> <i class="fa-solid fa-camera"></i></a></div>
-                            </div>
-                            <div class="popular-badge"><img src="assets/img/icon/sell_rent_icon.svg" alt="icon">
-                                <p>For Sale</p>
-                            </div>
-                        </div>
-                        <div class="property-content">
-                            <div class="media-body">
-                                <h3 class="box-title"><a href="property-details.html">Contemporary Loft</a></h3>
-                                <div class="box-text">
-                                    <div class="icon"><img src="assets/img/icon/popular-location.svg" alt="icon"></div>
-                                    39581 Rohan Estates, New York
-                                </div>
-                            </div>
-                            <ul class="property-featured">
-                                <li>
-                                    <div class="icon"><img src="assets/img/icon/bed.svg" alt="icon"></div>Bed 4
-                                </li>
-                                <li>
-                                    <div class="icon"><img src="assets/img/icon/bath.svg" alt="icon"></div>Bath 2
-                                </li>
-                                <li>
-                                    <div class="icon"><img src="assets/img/icon/sqft.svg" alt="icon"></div>1500 sqft
-                                </li>
-                            </ul>
-                            <div class="property-bottom">
-                                <h6 class="box-title">Rs335,800.00</h6><a class="th-btn sm style3 pill"
-                                    href="property-details.html"> Enquiry Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 filter-item cat4 cat3 cat2">
-                    <div class="popular-list-1">
-                        <div class="thumb-wrapper">
-                            <div class="th-slider"
-                                data-slider-options='{"loop":false, "autoplay": false,"autoHeight": true, "effect":"fade"}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-3.jpg"><img
-                                                src="assets/img/popular/popular-1-3.jpg" alt="Image"></a></div>
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-4.jpg"><img
-                                                src="assets/img/popular/popular-1-4.jpg" alt="Image"></a></div>
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-3.jpg"><img
-                                                src="assets/img/popular/popular-1-3.jpg" alt="Image"></a></div>
-                                    <div class="swiper-slide"><a class="popular-popup-image"
-                                            href="assets/img/popular/popular-1-4.jpg"><img
-                                                src="assets/img/popular/popular-1-4.jpg" alt="Image"></a></div>
-                                </div>
-                                <div class="icon-wrap"><button class="slider-arrow slider-prev"><i
-                                            class="far fa-arrow-left"></i></button> <button
-                                        class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="actions"><a href="wishlist.html" class="icon-btn"><i
-                                        class="fas fa-heart"></i></a></div>
-                            <div class="actions-style-2-wrapper">
-                                <div class="actions style-2"><a href="#" class="icon-btn"><span class="action-text">Add
-                                            To Favorite</span> <i class="fa-solid fa-bookmark"></i> </a><a
-                                        href="assets/img/popular/popular-1-1.jpg"
-                                        class="icon-btn popular-popup-image"><span class="action-text">View all
-                                            img</span> <i class="fa-solid fa-camera"></i></a></div>
-                            </div>
-                            <div class="popular-badge"><img src="assets/img/icon/sell_rent_icon.svg" alt="icon">
-                                <p>For Sale</p>
-                            </div>
-                        </div>
-                        <div class="property-content">
-                            <div class="media-body">
-                                <h3 class="box-title"><a href="property-details.html">Cozy Cottage</a></h3>
-                                <div class="box-text">
-                                    <div class="icon"><img src="assets/img/icon/popular-location.svg" alt="icon"></div>
-                                    39581 Rohan Estates, New York
-                                </div>
-                            </div>
-                            <ul class="property-featured">
-                                <li>
-                                    <div class="icon"><img src="assets/img/icon/bed.svg" alt="icon"></div>Bed 4
-                                </li>
-                                <li>
-                                    <div class="icon"><img src="assets/img/icon/bath.svg" alt="icon"></div>Bath 2
-                                </li>
-                                <li>
-                                    <div class="icon"><img src="assets/img/icon/sqft.svg" alt="icon"></div>1500 sqft
-                                </li>
-                            </ul>
-                            <div class="property-bottom">
-                                <h6 class="box-title">Rs250,800.00</h6><a class="th-btn sm style3 pill"
-                                    href="property-details.html">Enquiry Now</a>
                             </div>
                         </div>
                     </div>
@@ -883,200 +1005,69 @@
         </div>
     </section>
 
-   
 
-  
 
-    <section class="explore-cites-sec overflow-hidden">
-        <div class="container-fluid p-0">
-            <div class="row flex-row-reverse">
-                <div class="col-xl-12">
-                    <div class="explore-single-item">
-                        <div class="main-container">
-                            <div class="swiper th-slider panoramaSlide1" id="panoramaSlide1"
-                                data-slider-options='{"effect":"fade", "autoplay": true, "loop": true, "speed": 1000, "allowTouchMove": false, "simulateTouch": false}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="explore-single-slide"><img
-                                                src="assets/img/explore-cites/explore-cites-bg-1.jpg" alt="img"></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="explore-single-slide"><img
-                                                src="assets/img/explore-cites/explore-cites-bg-2.jpg" alt="img"></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="explore-single-slide"><img
-                                                src="assets/img/explore-cites/explore-cites-bg-3.jpg" alt="img"></div>
-                                    </div>
-                                </div><button data-slider-prev="#panoramaSlide1"
-                                    class="slider-arrow slider-prev style3"><i class="far fa-arrow-left"></i></button>
-                                <button data-slider-next="#panoramaSlide1" class="slider-arrow slider-next style3"><i
-                                        class="far fa-arrow-right"></i></button>
-                            </div>
-                        </div>
-                        <div class="icon-wrap add-explore-city-icon">
-                            <div class="animation"><i class="fa-solid fa-plus"></i></div>
-                        </div>
-                        <div class="popular-list-1 explore-card">
-                            <div class="property-content">
-                                <div class="media-body">
-                                    <h3 class="box-title"><a
-                                            href="https://html.themeholy.com/property-details">Apartment for rent</a>
-                                    </h3>
-                                    <h5 class="price">Rs2,750 <span class="month">/month</span></h5>
-                                    <p class="box-text">We Help you find the best places and offer near you. Bring to
-                                        the table win-win survival strategies to ensure proactive domination going
-                                        forward.</p>
-                                </div>
-                                <div class="bottom-wrap">
-                                    <ul class="property-featured">
-                                        <li>
-                                            <div class="icon"><img src="assets/img/icon/bed.svg" alt="icon"></div>Bed 4
-                                        </li>
-                                        <li>
-                                            <div class="icon"><img src="assets/img/icon/bath.svg" alt="icon"></div>Bath
-                                            2
-                                        </li>
-                                        <li>
-                                            <div class="icon"><img src="assets/img/icon/sqft.svg" alt="icon"></div>1500
-                                            sqft
-                                        </li>
-                                    </ul>
-                                    <div class="property-bottom"><a class="th-btn sm style3 pill"
-                                            href="https://html.themeholy.com/property-details">View More</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-   <section class="space overflow-hidden" id="blog-sec">
-        <div class="container">
-            <div class="row justify-content-lg-between justify-content-center align-items-end">
-                <div class="col-lg-6">
-                    <div class="title-area text-left text-lg-start">
-                        <p class="sub-title fadeinup wow" data-wow-duration="1.5s" data-wow-delay="0.1s"><span
-                                class="double-line"></span>latest News</p>
-                        <h2 class="sec-title fadeinup wow" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                            Latest news & articles</h2>
-                        <p class="sec-text pe-xl-4 fadeinup wow" data-wow-duration="1.5s" data-wow-delay="0.5s">Car
-                            dealerships typically feature showrooms where the latest models are displayed in a well-lit,
-                            aesthetically pleasing environment.</p>
-                    </div>
-                </div>
-                <div class="col-lg-auto d-none d-lg-block">
-                    <div class="sec-btn"><a href="blog.html" class="th-btn pill style3">Explore All <i
-                                class="fas fa-arrow-up-right"></i></a></div>
-                </div>
-            </div>
-            <div class="slider-area">
-                <div class="swiper th-slider has-shadow" id="blogSlider1"
-                    data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"},"1300":{"slidesPerView":"3"}}, "autoHeight": "true"}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img"><a href="blog-details.html"><img
-                                            src="assets/img/blog/blog_1_1.jpg" alt="Image"></a>
-                                    <div class="date"><a href="blog.html">22 Feb</a></div>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta"><a href="blog.html"><i class="fa-solid fa-user"></i> Emma</a>
-                                        <a href="blog.html"><i class="fa-solid fa-comments"></i> No Comments</a></div>
-                                    <h3 class="box-title"><a href="blog-details.html">Building gains into housing stocks
-                                            and how to trade the sector</a></h3><a href="blog-details.html"
-                                        class="th-btn pill style3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img"><a href="blog-details.html"><img
-                                            src="assets/img/blog/blog_1_2.jpg" alt="Image"></a>
-                                    <div class="date"><a href="blog.html">23 Feb</a></div>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta"><a href="blog.html"><i class="fa-solid fa-user"></i>
-                                            Michel</a> <a href="blog.html"><i class="fa-solid fa-comments"></i> 2
-                                            Comments</a></div>
-                                    <h3 class="box-title"><a href="blog-details.html">92% of millennial homebuyers say
-                                            has impacted their plans</a></h3><a href="blog-details.html"
-                                        class="th-btn pill style3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img"><a href="blog-details.html"><img
-                                            src="assets/img/blog/blog_1_3.jpg" alt="Image"></a>
-                                    <div class="date"><a href="blog.html">24 Feb</a></div>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta"><a href="blog.html"><i class="fa-solid fa-user"></i>
-                                            Oliver</a> <a href="blog.html"><i class="fa-solid fa-comments"></i> No
-                                            Comments</a></div>
-                                    <h3 class="box-title"><a href="blog-details.html">Exploring the impact of climate
-                                            change on global markets</a></h3><a href="blog-details.html"
-                                        class="th-btn pill style3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img"><a href="blog-details.html"><img
-                                            src="assets/img/blog/blog_1_4.jpg" alt="Image"></a>
-                                    <div class="date"><a href="blog.html">26 Feb</a></div>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta"><a href="blog.html"><i class="fa-solid fa-user"></i>
-                                            Elena</a> <a href="blog.html"><i class="fa-solid fa-comments"></i> 5
-                                            Comments</a></div>
-                                    <h3 class="box-title"><a href="blog-details.html">The future of city living and its
-                                            influence on of the in design</a></h3><a href="blog-details.html"
-                                        class="th-btn pill style3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img"><a href="blog-details.html"><img
-                                            src="assets/img/blog/blog_1_5.jpg" alt="Image"></a>
-                                    <div class="date"><a href="blog.html">27 Feb</a></div>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta"><a href="blog.html"><i class="fa-solid fa-user"></i> Sam</a>
-                                        <a href="blog.html"><i class="fa-solid fa-comments"></i> No Comments</a></div>
-                                    <h3 class="box-title"><a href="blog-details.html">Exploring innovative architecture
-                                            trends and their impact</a></h3><a href="blog-details.html"
-                                        class="th-btn pill style3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img"><a href="blog-details.html"><img
-                                            src="assets/img/blog/blog_1_6.jpg" alt="Image"></a>
-                                    <div class="date"><a href="blog.html">16 Mar</a></div>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta"><a href="blog.html"><i class="fa-solid fa-user"></i>
-                                            David</a> <a href="blog.html"><i class="fa-solid fa-comments"></i> 8
-                                            Comments</a></div>
-                                    <h3 class="box-title"><a href="blog-details.html">Breaking down latest tech trends
-                                            and investment opportunity</a></h3><a href="blog-details.html"
-                                        class="th-btn pill style3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><button data-slider-prev="#blogSlider1" class="slider-arrow slider-prev"><i
-                        class="far fa-arrow-left"></i></button> <button data-slider-next="#blogSlider1"
-                    class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer class="footer-wrapper footer-default footer-layout3">
         <div class="widget-area">
             <div class="container">
@@ -1199,93 +1190,20 @@
                 </div>
             </div>
         </div>
-      
-<!-- phomne nuo -->
-<div class="fixedcall1">
-   <div class="phonenumber">
-      <span><i class="fas fa-phone-volume"></i></span>
-      <p><a class="phn" href="tel:987654321">Call Now<br>987654321</a></p>
-   </div>
-</div>
 
-<script>
-    document.querySelector(".offer")?.addEventListener("click", function () {
-        swal({
-            title: "",
-            text: "Do you want to make Consistent Profits?",
-            imageUrl: "https://websitica.com/wp-content/uploads/2016/05/website-logo.png",
-            imageWidth: 350,
-            imageHeight: 100,
-            imageAlt: "Intraday Income",
-            html: "<hr><h2 class='swal2-title'>Pay a Token advance and avail this one-time offer!!</h2>" +
-                "Pay a Token advance of Rs.1000/- to this one-time avail free offer on <b style='color:#3e7fb9; font-size: 18px;'>Social Media Managing Platform worth Rs.7000/-</b>" +
-                "<br><div id='pop-msg'></div><button data-pixel='lead4' class='btn2 btn-primary'>Pay Now</button> <span class='close enrollclose'><i class='fa fa-times-circle-o' aria-hidden='true'></i></span>",
-            showCancelButton: false,
-            showConfirmButton: false
-        });
-    });
 
-    (function ($) {
-        $('body').on('click', ".enrollclose", function () {
-            swal.close();
-        });
-    })(jQuery);
 
-    function popup() {
-        swal({
-            title: "",
-            text: "Do you want to make Consistent Profits?",
-            html: "<h2 class='swal2-title'>Enquire Now</h2>" +
-                "<form id='getform'>" +
-                "<div class='form-group margin-below'>" +
-                "<input type='text' name='name' class='form-control fip' placeholder='Name'>" +
-                "</div>" +
-                "<div class='form-group margin-below'>" +
-                "<input type='email' name='email' id='email' class='form-control fip' placeholder='Email Address'>" +
-                "<input type='number' name='number' class='form-control fip' id='number' placeholder='Mobile Number' onKeyPress='if(this.value.length==10) return false;'>" +
-                "<input type='text' name='message' class='form-control fip' placeholder='Message (Optional)'>" +
-                "</div></form>" +
-                "<div id='pop-msg'></div><button data-pixel='lead4' class='btn2 btn-primary'>Submit</button> <span class='close enrollclose'><i class='fa fa-times-circle-o' aria-hidden='true'></i></span>",
-            showCancelButton: false,
-            showConfirmButton: false
-        });
-    }
+        <!-- pendmmls, -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const stickyBtn = document.createElement("a");
+                stickyBtn.href = "#";
+                stickyBtn.className = "sticky-btn-vertical";
+                stickyBtn.innerText = "👇 Mandated Properties";
+                document.body.appendChild(stickyBtn);
+            });
+        </script>
 
-    $('body').on('click', ".btn2", function () {
-        const fdata = $("#getform").serialize();
-        const email = $("#email").val();
-        const number = $("#number").val();
-
-        if (email !== "") {
-            if (number !== "") {
-                $.ajax({
-                    url: "https://ignitededufuture.com/popup/savedata.php",
-                    type: "post",
-                    data: fdata,
-                    beforeSend: function () {
-                        $("#pop-msg").html("Please Wait...!");
-                        $(".btn2").prop('disabled', true);
-                    },
-                    success: function (response) {
-                        $(".btn2").prop('disabled', false);
-                        if (response == "success") {
-                            $("#pop-msg").html("Successfully submitted.!").css("color", "green");
-                            setTimeout(function () { swal.close(); }, 3000);
-                        } else {
-                            $("#pop-msg").html(response);
-                        }
-                    }
-                });
-            } else {
-                $("#pop-msg").html("Please fill out Number correctly");
-            }
-        } else {
-            $("#pop-msg").html("Please fill out email correctly");
-        }
-    });
-</script>
-
-<!-- pendmmls, -->
 
 
     </footer>
@@ -1301,9 +1219,9 @@
     <script src="assets/js/main.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-<a href="https://wa.me/1234567890?text=hello+123" target=”_blank” class="whatsapp-btn">
-  <i class="bi bi-whatsapp"></i>
-</a>
+    <a href="https://wa.me/1234567890?text=hello+123" target=”_blank” class="whatsapp-btn">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
 </body>
 
